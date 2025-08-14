@@ -1,11 +1,10 @@
 div.FromTumblrToReactHeaderImgDiv {
   max-width: 350px;
-  margin: auto; /* Center the image */
-  margin-bottom: 6em;
+  margin: auto;
 }
 
 .FromTumblrToReactHeaderImg {
-  width: 80%; /*Image responsive */
-  height: auto; /* Maintain aspect ratio */
+  width: 80%;
+  height: auto;
   margin-top: 5em;
 }

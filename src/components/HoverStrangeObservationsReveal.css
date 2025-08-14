@@ -5,7 +5,8 @@
   align-items: center;
   height: 300px;
   cursor: default;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   overflow: hidden;
 
   /* FIX HAIRLINE ON iOS + SAFARI BORDER RENDER BUG */
@@ -41,7 +42,8 @@
   font-weight: 700;
   color: black;
   white-space: nowrap;
-  max-width: 95vw; /* PREVENT OVERFLOW */
+  max-width: 95vw;
+  /* PREVENT OVERFLOW */
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -51,9 +53,12 @@
   width: 100%;
   height: auto;
   max-width: 600px;
-  border-radius: inherit; /* ✅ JUST USE INHERIT */
-  border-radius: 5px; /* ADDED THIS FOR STYLE BUT REMOVE IT IF THE LINE COMES BACK ON THE BOTTOM OF TLP SO EASTER EGG */
-  display: block; /* 🚫 FIXES SPACING FROM INLINE DEFAULT */
+  border-radius: inherit;
+  /* ✅ JUST USE INHERIT */
+  border-radius: 5px;
+  /* ADDED THIS FOR STYLE BUT REMOVE IT IF THE LINE COMES BACK ON THE BOTTOM OF TLP SO EASTER EGG */
+  display: block;
+  /* 🚫 FIXES SPACING FROM INLINE DEFAULT */
 }
 
 .fade-in {
@@ -72,7 +77,8 @@
   }
 
   .hover-name {
-    font-size: 7.5vw; /* BALANCED RESPONSIVE SIZE */
+    font-size: 7.5vw;
+    /* BALANCED RESPONSIVE SIZE */
   }
 }
 
@@ -84,7 +90,9 @@
 
   .hover-name,
   .hover-image {
-    transition: opacity 0.4s ease-in-out; /* KEEP ANIMATION */
-    pointer-events: none; /* ALLOW WRAPPER TO RECEIVE TOUCH */
+    transition: opacity 0.4s ease-in-out;
+    /* KEEP ANIMATION */
+    pointer-events: none;
+    /* ALLOW WRAPPER TO RECEIVE TOUCH */
   }
 }
