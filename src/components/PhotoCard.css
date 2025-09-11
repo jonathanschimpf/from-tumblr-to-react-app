@@ -1,14 +1,18 @@
 .photo-card {
   max-width: 600px;
   margin: auto;
-  margin-bottom: 10em; /* This still handles space between cards */
+  margin-bottom: 10em;
+  /* This still handles space between cards */
   padding-top: 25px;
 }
 
 .photo-card img {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  cursor: pointer; /* Change cursor to pointer when hovering over the image */
+  width: 100%;
+  /* Make the image responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+  cursor: pointer;
+  /* Change cursor to pointer when hovering over the image */
 }
 
 .photo-card .caption {
@@ -35,6 +39,7 @@
   margin-top: 6.5em;
   margin-bottom: 7.5em;
 }
+
 .general-navigation-icon {
   display: inline-block;
   margin: 0 2px;
@@ -48,6 +53,7 @@
   opacity: 0.5;
   cursor: pointer;
 }
+
 .general-navigation-icon:active {
   opacity: 1;
 }

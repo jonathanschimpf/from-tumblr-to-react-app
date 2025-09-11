@@ -17,8 +17,11 @@ function App() {
     const jsonPath = `/captions-and-images.json?t=${timestamp}`;
     console.log("📸 Fetching JSON from:", jsonPath);
 
-    fetch(jsonPath)
-      .then((res) => res.json())
+    fetch(jsonPath, { cache: "no-store" }) // ⬅ important: bypass cache
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then((json) => {
         console.log("✅ JSON loaded, entries:", json.length);
         setData(json);

@@ -6,3 +6,16 @@
   command = "npm start"
   port = 3000
 
+# --- Add custom headers ---
+[[headers]]
+  # Fix the 404 by making sure the correct manifest path is used
+  for = "/manifest.json"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  # Stop Netlify from caching your captions JSON
+  for = "/captions-and-images.json"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
