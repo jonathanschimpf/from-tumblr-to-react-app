@@ -1,0 +1,104 @@
+/* ALL COMMENTS INTENTIONALLY IN ALL CAPS PER USER PREFERENCE */
+
+/* CARD LAYOUT */
+.photo-card {
+  max-width: 420px;
+  margin: auto;
+  margin-bottom: 7em;
+  padding-top: 16px;
+}
+
+/* RESPONSIVE IMAGE */
+.photo-card img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* CAPTION STYLES */
+.photo-card .caption {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+  padding: 8px 0;
+}
+
+/* SMALL-SCREEN TWEAKS */
+@media (max-width: 600px) {
+  .photo-card .caption {
+    font-size: 12px;
+  }
+
+  .photo-card img {
+    width: 93vw;
+    max-width: 360px;
+  }
+}
+
+/* WRAPPER FOR THE NAV ICON AREA */
+.general-navigation-icon-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 6.5em;
+  margin-bottom: 7.5em;
+  position: relative;
+  /* ESTABLISH STACKING CONTEXT */
+  z-index: 2;
+  /* KEEP ABOVE ANY LOW-LEVEL OVERLAYS */
+}
+
+/* BUTTON HANDLES CLICKS; KEEPS A11Y + RELIABILITY */
+.general-navigation-icon-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0;
+  /* TIGHT WRAP AROUND ICON */
+  position: relative;
+  z-index: 3;
+  /* ENSURE CLICKABILITY OVER IMAGES/OVERLAYS */
+}
+
+/* THE ICON ITSELF DOES NOT TAKE POINTER EVENTS; THE BUTTON DOES */
+.general-navigation-icon {
+  display: inline-block;
+  margin: 0 2px;
+  color: inherit;
+  text-decoration: none;
+  flex: none;
+  pointer-events: none;
+  /* ROUTE EVENTS TO THE BUTTON */
+}
+
+/* HOVER/ACTIVE FEEDBACK ON THE BUTTON (NOT THE ICON) */
+.general-navigation-icon-btn:hover .general-navigation-icon {
+  opacity: 0.5;
+}
+
+.general-navigation-icon-btn:active .general-navigation-icon {
+  opacity: 1;
+}
+
+/* SMALL ICON SIZE ON VERY NARROW SCREENS */
+@media (max-width: 450px) {
+  .general-navigation-icon {
+    font-size: 15px;
+  }
+}
+
+
+/* DE-BUG EFFORTS BELOWWW */
+/* DEBUG CLICK BLOCKING */
+.general-navigation-icon-div {
+  position: relative;
+  z-index: 9999 !important;
+}
+
+.general-navigation-icon-btn {
+  pointer-events: auto !important;
+  z-index: 10000 !important;
+  /* TEMP TEST */
+}

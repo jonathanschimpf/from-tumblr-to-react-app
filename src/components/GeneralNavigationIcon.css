@@ -1,0 +1,30 @@
+.general-navigation-icon-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 2.5em;
+    margin-bottom: 7.5em;
+  }
+  .general-navigation-icon {
+    display: inline-block;
+    margin: 0 2px;
+    color: inherit;
+    text-decoration: none;
+    flex: none;
+    cursor: pointer;
+  }
+  
+  .general-navigation-icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .general-navigation-icon:active {
+    opacity: 1;
+  }
+
+  
+  @media (max-width: 450px) {
+    .general-navigation-icon  {
+      font-size: 15px;
+    }
+  }

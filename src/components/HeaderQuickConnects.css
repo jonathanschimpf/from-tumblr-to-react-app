@@ -1,0 +1,43 @@
+.icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+}
+
+.icon-col {
+  padding: 0.5rem;
+  flex: 0 0 auto;
+}
+
+.responsiveIcon {
+  display: inline-block;
+  margin: 0 5px;
+  color: inherit;
+  text-decoration: none;
+  flex: none;
+}
+
+.responsiveIcon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+.tooltip-inner-quickconnects {
+  background-color: #fff !important;
+  color: #878787  !important;
+  border-radius: 4px  !important;
+  font-weight: 700;
+
+}
+
+
+@media (max-width: 450px) {
+  .responsiveIcon {
+    font-size: 16.1px;
+  }
+
+}
+

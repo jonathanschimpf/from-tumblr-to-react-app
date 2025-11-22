@@ -1,0 +1,98 @@
+.hover-wrapper {
+  position: relative;
+  display: block;
+  text-align: center;
+  cursor: default;
+  margin-top: 1.25rem;
+  margin-bottom: 6rem;
+
+  /* FIX HAIRLINE ON iOS + SAFARI BORDER RENDER BUG */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  /* TRIGGER GPU COMPOSITE LAYER (FOR SMOOTHER RENDERING) */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.hover-inner {
+  position: relative;
+  width: min(520px, 90vw);
+  aspect-ratio: 3 / 1;
+  margin: 0 auto;
+  cursor: normal;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@supports not (aspect-ratio: 1 / 1) {
+  .hover-inner {
+    height: 180px;
+  }
+}
+
+.hover-name,
+.hover-image {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hover-name {
+  z-index: 2;
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 700;
+  color: black;
+}
+
+.hover-image {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* ✅ MOBILE RESPONSIVE BEHAVIOR */
+@media (max-width: 600px) {
+  .hover-wrapper {
+    height: 240px;
+    margin-bottom: 3rem;
+  }
+
+  .hover-name {
+    font-size: 7.5vw;
+    /* BALANCED RESPONSIVE SIZE */
+  }
+}
+
+/* ✅ TOUCH DEVICES (Allow Tap-to-Toggle) */
+@media (hover: none) {
+  .hover-wrapper {
+    cursor: pointer;
+  }
+
+  .hover-name,
+  .hover-image {
+    transition: opacity 0.4s ease-in-out;
+    /* KEEP ANIMATION */
+    pointer-events: none;
+    /* ALLOW WRAPPER TO RECEIVE TOUCH */
+  }
+}

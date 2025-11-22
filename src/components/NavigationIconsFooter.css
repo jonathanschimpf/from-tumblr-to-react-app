@@ -1,0 +1,45 @@
+.navigation-icons-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 4.5em;
+}
+.responsivenavigationIcon {
+  display: inline-block;
+  margin: 0 2px;
+  color: inherit;
+  text-decoration: none;
+  flex: none;
+}
+
+.responsivenavigationIcon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.tooltip-inner-navigation-styles {
+  background-color: #fff;
+  color: #878787;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+@media (max-width: 450px) {
+  .responsiveNavigationIcon {
+    font-size: 32px;
+  }
+}
+
+
+/* "2010 End Message" */
+
+.end-message {
+  text-align: center;
+  padding: 0em;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  p.end-message {
+    font-size: 11.5px;
+  }
+}

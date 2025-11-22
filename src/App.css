@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+* {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.titleMyName {
+  font-weight: bolder;
+  font-size: 50px;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .titleMyName {
+    font-size: 8.3vw;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
