@@ -17,7 +17,7 @@
 
 .hover-inner {
   position: relative;
-  width: min(520px, 90vw);
+  width: min(420px, 90vw);
   aspect-ratio: 3 / 1;
   margin: 0 auto;
   cursor: normal;
@@ -48,7 +48,7 @@
 
 .hover-name {
   z-index: 2;
-  font-size: clamp(32px, 6vw, 48px);
+  font-size: clamp(30px, 4.6vw, 36px);
   font-weight: 700;
   color: black;
 }
