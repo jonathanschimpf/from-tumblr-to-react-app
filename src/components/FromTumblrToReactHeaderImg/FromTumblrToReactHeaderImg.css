@@ -1,7 +1,7 @@
 .FromTumblrToReactHeaderImgDiv {
   display: flex;
   justify-content: center;
-  margin: 3.5em auto 1.5em;
+  margin: 7.5em auto 6.5em;
   padding: 0 1rem;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .FromTumblrToReactHeaderImg {
-  width: min(450px, 90vw);
+  width: min(500px, 90vw);
   height: auto;
   display: block;
   transition: opacity 200ms ease;
