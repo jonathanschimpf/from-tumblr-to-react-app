@@ -100,8 +100,7 @@ Migrated from Create React App (2023) → React+Vite in November '25 (2025+)
 
 <p>&nbsp;</p>
 <p align="center">
-<img src="public/images/readmepreviewcratovite.png
-" alt="Project Preview" width="500" />
+<img src="./public/images/readmepreviewcratovite.png" width="500" />
 </p>
 
 <p>&nbsp;</p>
