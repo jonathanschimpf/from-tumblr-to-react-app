@@ -33,6 +33,31 @@ This site is now continuously deployed using **Netlify** — pushing updates str
 
 <p>&nbsp;</p>
 
+⚡ Migration to Vite (2025+)
+<p>&nbsp;</p>
+
+This project was originally built on Create React App (CRA) in 2023. The foundation was solid and the architecture held up through hundreds of photos, captions, and countless UX tweaks. But in late 2025, it became clear that CRA’s build pipeline and dev server were slowing things down.
+
+The entire project was migrated to Vite, giving it:
+
+A dramatically faster local dev server (instant start-up, instant reloads)
+
+A modern ES module build process
+
+Lighter configuration with less tooling overhead
+
+Faster production builds on Netlify
+
+Cleaner control over the index.html, assets, and preview images
+
+All core functionality stayed intact: the infinite scroll, the Python-generated metadata, the hover interactions, the archive navigation, and your UI flow. Vite simply took an already established system and gave it a faster engine.
+
+The transition required updating the project structure, handling the new index.html root, and ensuring all asset paths (including the public/images/FromTumblrToReact_v2.jpg logo and the new hover “easter egg”) stayed stable in production. Everything now builds and deploys smoothly on Netlify’s 2025+ environment using the updated build image.
+
+Your photo journal runs the same — it just runs faster and is easier to maintain going forward.
+
+<p>&nbsp;</p>
+
 ## Credits
 
 <p>&nbsp;</p>
@@ -70,6 +95,13 @@ Photo journal rebuilt from Tumblr → React (2010–2023+)
 </p>
 
 <p>&nbsp;</p>
+
+Migrated from Create React App (2023) → React+Vite in November '25 (2025+)
+
+<p>&nbsp;</p>
+<p align="center">
+<img src="public/images/READMEPreview_CRA-to-VITE.png" alt="Project Preview" width="500" />
+</p>
 
 <p>&nbsp;</p>
 
