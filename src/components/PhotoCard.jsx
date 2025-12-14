@@ -26,12 +26,14 @@ const PhotoCard = forwardRef(
     return (
       <div className="photo-card-wrapper" ref={ref}>
         <div className="photo-card" onClick={onClick}>
-          <LazyLoadImage
-            src={image}
-            alt={caption}
-            effect="blur"
-            onLoad={handleImageLoaded}
-          />
+          <div className="photo-card-media">
+            <LazyLoadImage
+              src={image}
+              alt={caption}
+              effect="blur"
+              onLoad={handleImageLoaded}
+            />
+          </div>
 
           {isLoaded && <p className="caption">{caption}</p>}
 

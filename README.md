@@ -54,7 +54,9 @@ All core functionality stayed intact: the infinite scroll, the Python-generated 
 
 The transition required updating the project structure, handling the new index.html root, and ensuring all asset paths (including the public/images/FromTumblrToReact_v2.jpg logo and the new hover “easter egg”) stayed stable in production. Everything now builds and deploys smoothly on Netlify’s 2025+ environment using the updated build image.
 
-Your photo journal runs the same — it just runs faster and is easier to maintain going forward.
+My photo journal runs the same. It just runs faster and is easier to maintain going forward. I've also kept all that is posted on my Instagram account [@schimpfstagram](https://www.instagram.com/schimpfstagram/) current. My newest work always exists on my '.com'.
+
+
 
 <p>&nbsp;</p>
 

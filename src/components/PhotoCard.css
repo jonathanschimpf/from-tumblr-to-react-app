@@ -2,9 +2,9 @@
 
 /* CARD LAYOUT */
 .photo-card {
-  max-width: 420px;
-  margin: auto;
-  margin-bottom: 7em;
+  width: 100%;
+  max-width: min(84vw, 500px);
+  margin: 0 auto 5.5em;
   padding-top: 16px;
 }
 
@@ -13,7 +13,20 @@
   width: 100%;
   height: auto;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 18px;
+  display: block;
+}
+
+.photo-card-media {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* ALIGN LAZY-LOAD PLACEHOLDERS WITH THE IMAGE SO CORNERS MATCH ON MOBILE */
+.photo-card .lazy-load-image-background {
+  border-radius: 18px !important;
+  display: block !important;
+  overflow: hidden !important;
 }
 
 /* CAPTION STYLES */
@@ -30,9 +43,13 @@
     font-size: 12px;
   }
 
+  .photo-card {
+    max-width: min(94vw, 460px);
+  }
+
   .photo-card img {
-    width: 93vw;
-    max-width: 360px;
+    width: 100%;
+    max-width: none;
   }
 }
 

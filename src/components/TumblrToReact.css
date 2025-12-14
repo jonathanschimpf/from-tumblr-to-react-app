@@ -27,8 +27,8 @@
   background: #fff;
   display: inline-block;
   width: auto;
-  max-width: min(96vw, 760px);
-  max-height: calc(96vh - 40px);
+  max-width: min(92vw, 1100px);
+  max-height: calc(94vh - 30px);
   padding: 32px 32px 26px;
   border-radius: 22px;
   box-shadow: 0 18px 60px rgba(0, 0, 0, .65);
@@ -38,9 +38,9 @@
 
 /* Image sizing: never exceed the frame */
 .modal-content img {
-  width: min(500px, calc(96vw - 80px));
+  width: min(88vw, 1000px);
   height: auto;
-  max-height: min(625px, calc(96vh - 140px));
+  max-height: min(88vh, 900px);
   object-fit: contain;
   border-radius: 18px;
   display: block;
@@ -81,7 +81,7 @@
 @media (max-width: 600px) {
   .modal-content {
     width: 100%;
-    max-width: 360px;
+    max-width: 92vw;
     padding: 26px 18px 18px;
     display: flex;
     flex-direction: column;
@@ -91,8 +91,8 @@
 
   .modal-content img {
     width: calc(100% - 24px);
-    max-width: 320px;
-    max-height: min(72vh, 420px);
+    max-width: 88vw;
+    max-height: min(80vh, 520px);
     border-radius: 14px;
   }
 }
