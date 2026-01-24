@@ -109,6 +109,6 @@ Migrated from Create React App (2023) → React+Vite in November '25 (2025+)
 
 ## ✍️ README co-authored by a GPT
 
-✨ A GPT helped write this README — because it’s 2025.
+✨ A GPT helped write this README — because it’s 2026.
 
 <p>&nbsp;</p>
