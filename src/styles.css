@@ -155,3 +155,17 @@ html {
 .modal-close:active {
     opacity: .4;
 }
+
+@media (max-width: 500px) {
+    .modal-content {
+        padding-top: 24px;
+        padding-right: 24px;
+    }
+
+    .modal-close {
+        top: 8px;
+        right: 8px;
+        font-size: 16px;
+        padding: 4px;
+    }
+}
