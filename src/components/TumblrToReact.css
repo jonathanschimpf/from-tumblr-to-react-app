@@ -38,8 +38,9 @@
 
 /* Image sizing: never exceed the frame */
 .modal-content img {
-  width: min(88vw, 1000px);
+  width: 100%;
   height: auto;
+  max-width: 100%;
   max-height: min(88vh, 900px);
   object-fit: contain;
   border-radius: 18px;
@@ -89,9 +90,16 @@
     gap: 10px;
   }
 
+  .modal-close {
+    top: 8px;
+    right: 8px;
+    font-size: 18px;
+    padding: 2px;
+  }
+
   .modal-content img {
-    width: calc(100% - 24px);
-    max-width: 88vw;
+    width: 100%;
+    max-width: 100%;
     max-height: min(80vh, 520px);
     border-radius: 14px;
   }
