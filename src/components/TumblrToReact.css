@@ -54,6 +54,32 @@
   font-size: .95rem;
 }
 
+@media (min-width: 601px) {
+  .modal-backdrop {
+    padding: 24px;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-height: calc(100vh - 48px);
+    max-height: calc(100dvh - 48px);
+  }
+
+  .modal-content img {
+    width: auto;
+    max-width: calc(92vw - 64px);
+    max-height: min(900px, calc(100vh - 154px));
+    max-height: min(900px, calc(100dvh - 154px));
+  }
+
+  .modal-caption {
+    margin: 0;
+  }
+}
+
 /* Close button sits in the white border area, not over the image */
 .modal-close {
   position: absolute;
